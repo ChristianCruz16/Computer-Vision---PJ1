@@ -1,0 +1,17 @@
+==============================================================================
+  PRAKTIK TERPADU MINGGU 4-7 - RET503
+==============================================================================
+  NIM / Nama    : 4222401031 / Christian Cruz
+  Waktu         : 18-10-2026 12:05:14
+  Perangkat     : GPU (CUDA device 0)
+  Dataset       : ../dataset_bbox_split  (sidik jari label: B22C2E4BD1EE)
+  Pengaturan    : model yolo26n, epochs 30, imgsz 416, batch 8
+==============================================================================
+  Eksperimen     Perubahan        mAP50  mAP50-95      P      R     ms   menit
+  E1_pretrained  -                0.995     0.950  0.997  0.997    0.8     9.8
+  E2_scratch     -                0.995     0.924  0.995  0.991    0.9     9.5
+  E3_tuning      epochs=40        0.995     0.952  0.989  0.999    0.8    12.9
+==============================================================================
+  Model terpilih (mAP50-95 val tertinggi): E3_tuning
+  Hasil di data TEST (sekali saja)       : mAP50 0.995 | mAP50-95 0.938
+==============================================================================
